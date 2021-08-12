@@ -1,0 +1,19 @@
+.loader {
+  position: absolute;
+  top: 50%;left: 50%;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: 10px solid rgba(110, 5, 209, 0.13);
+  border-top: 10px solid rgb(128, 6, 241);
+  animation: rotate 1.5s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%,-50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%,-50%) rotate(360deg);
+  }
+}

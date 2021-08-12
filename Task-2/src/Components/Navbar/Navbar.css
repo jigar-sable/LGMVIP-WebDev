@@ -1,0 +1,44 @@
+/* navbar */
+header{
+    display: flex;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    justify-content: space-between;
+    background: rgb(101, 7, 224);
+    padding: 1rem 10%;
+    box-shadow: 0 1rem 1rem rgba(65, 43, 43, 0.1);
+}
+header .logo{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #fff;
+}
+button{
+    background: #fff;
+    border-radius: .3rem;
+    padding: .6rem 1.5rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: rgb(101, 7, 224);
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s ease;
+}
+button:hover{
+    color: rgb(101, 7, 224);
+    background: rgb(255, 230, 6);
+}
+/* navbar */
+
+@media only screen and (max-width: 414px) {
+    header .logo{
+        font-size: 1.2rem;
+    }
+    button{
+        padding: .4rem 1rem;
+        font-size: 1rem;
+    }
+}

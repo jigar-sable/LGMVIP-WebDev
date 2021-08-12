@@ -1,0 +1,60 @@
+/* hero */
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    min-height: 100vh;
+    align-items: center;
+    scroll-behavior: smooth;
+    background: rgb(230, 255, 229);
+    font-family: 'Nunito', sans-serif;
+}
+.home .content{
+    flex: 1 1 40rem;
+    margin-top: -10rem;
+    padding: 1.5rem;
+}
+.home .image{
+    flex: 1 1 40rem;
+    margin-top: -6rem;
+}
+.home .image img{
+    width: 90%;
+    padding: 1rem;
+    animation: float 4s linear infinite;
+}
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(3rem);
+    }
+}
+.home .content h3{
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #012970;
+}
+.home .content p{
+    font-size: 2rem;
+    font-weight: 800;
+    color: #012970;
+    margin: 0;
+}
+
+
+@media only screen and (max-width: 414px) {
+    .home .content{
+        margin-top: -2rem;
+    }
+    .home .image{
+        margin-top: -8rem;
+    }
+    .home .content h3{
+        font-size: 3rem;
+    }
+    .home .content p{
+        font-size: 1.5rem;
+    }
+}
