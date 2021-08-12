@@ -1,4 +1,3 @@
-/* navbar */
 header{
     display: flex;
     align-items: center;
@@ -31,8 +30,6 @@ button:hover{
     color: rgb(101, 7, 224);
     background: rgb(255, 230, 6);
 }
-/* navbar */
-
 @media only screen and (max-width: 414px) {
     header .logo{
         font-size: 1.2rem;

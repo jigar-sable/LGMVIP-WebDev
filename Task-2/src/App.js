@@ -11,7 +11,7 @@ function App() {
   const [users, setUsers] = useState([]);
   const [isBtnClick, setisBtnClick] = useState(false);
 
-  const handleClick = async () => {
+  const fetchUsers = async () => {
     setisBtnClick(true);
     const response = await fetch('https://reqres.in/api/users');
     const res = await response.json();
@@ -24,7 +24,7 @@ function App() {
 
   return (
     <>
-        <Navbar handleClick={handleClick}/>   
+        <Navbar fetchUsers={fetchUsers}/>   
 
             {isBtnClick ? (
               isDataFetch ? (
