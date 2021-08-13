@@ -1,5 +1,6 @@
 let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
+let imgBtn = document.querySelectorAll('.img-btn');
 
 menu.onclick = () => {
     menu.classList.toggle('fa-times');
@@ -11,8 +12,20 @@ window.addEventListener('scroll', function(){
            header.classList.toggle("sticky", window.scrollY > 0); 
 });
 
+// change home background
+imgBtn.forEach(btn =>{
+    btn.addEventListener('click', ()=>{
+        document.querySelector('.controls .active').classList.remove('active');
+        btn.classList.add('active');
+        let src = btn.getAttribute('data-src');
+        document.querySelector('#home').style.backgroundImage = 'url("'+src+'")';
+    });
+});
 
-/* carousel life in zippy*/
+
+
+
+// carousel life in zippy
 var lifeimg = document.querySelectorAll('.lifeimg')
 var len=lifeimg.length;
 
