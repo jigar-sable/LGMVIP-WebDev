@@ -94,6 +94,68 @@
 <!-- pricing section starts -->
 <section class="pricing" id="pricing">
     <h2 class="heading">Pricing</h2>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="title">
+                <h2>PERSONAL</h2>
+                <div class="price">
+                    <span>29</span>
+                </div>
+            </div>
+            <div class="desc">
+            <ul>
+                <li><span>40 GB HDD</span> Storage</li>
+                <li>40 GB SSD Cloud Storage</li>
+                <li><span>40 GB HDD</span> Cloud Storage</li>
+                <li>40 GB SSD Cloud Storage</li>
+                <li>40 GB SSD Cloud Storage</li>
+            </ul>
+            <a href="#" class="btn"><i class="fas fa-shopping-cart"></i> Buy Now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="title">
+                <h2>PERSONAL</h2>
+                <div class="price">
+                    <span>29</span>
+                </div>
+            </div>
+            <div class="desc">
+            <ul>
+                <li><span>40 GB HDD</span> Storage</li>
+                <li>40 GB SSD Cloud Storage</li>
+                <li><span>40 GB HDD</span> Cloud Storage</li>
+                <li>40 GB SSD Cloud Storage</li>
+                <li>40 GB SSD Cloud Storage</li>
+            </ul>
+            <a href="#" class="btn"><i class="fas fa-shopping-cart"></i> Buy Now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="title">
+                <h2>PERSONAL</h2>
+                <div class="price">
+                    <span>29</span>
+                </div>
+            </div>
+            <div class="desc">
+            <ul>
+                <li><span>40 GB HDD</span> Storage</li>
+                <li>40 GB SSD Cloud Storage</li>
+                <li><span>40 GB HDD</span> Cloud Storage</li>
+                <li>40 GB SSD Cloud Storage</li>
+                <li>40 GB SSD Cloud Storage</li>
+            </ul>
+            <a href="#" class="btn"><i class="fas fa-shopping-cart"></i> Buy Now</a>
+            </div>
+        </div>
+        
+    </div>
+
 </section>
 <!-- pricing section ends -->
 
@@ -186,7 +248,7 @@
                 <a href="#" class="btn">Learn More</a>
                 </div>
             </div>
-            
+
         </div>
 
 </section>
@@ -196,8 +258,67 @@
 <!-- contact section starts -->
 <section class="contact" id="contact">
     <h2 class="heading">contact</h2>
+
+    <div class="row">
+        <div class="col">
+            <div id="map"></div>
+        </div>
+        <div class="col">
+            <div class="form-container">
+            
+                <form action="#">
+      
+                    <div class="form-group">
+                      <div class="field">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <i class='fas fa-user'></i>
+                      </div>
+                      <div class="field">
+                        <input type="text" name="email" placeholder="Email" required>
+                        <i class='fas fa-envelope'></i>
+                      </div>
+                      <div class="field">
+                        <input type="text" name="phone" placeholder="Phone">
+                        <i class='fas fa-phone-alt'></i>
+                      </div>
+                      <div class="message">
+                      <textarea placeholder="Message" name="message" required></textarea>
+                      <i class="fas fa-comment-dots"></i>
+                      </div>
+                      </div>
+
+                      <button type="submit" title="Sorry! This service hasn't active yet. Till then have live chat.">
+                        Submit <i class="fa fa-paper-plane"></i></button>
+                
+                  </form>
+            
+            </div>
+        </div>
+    </div>
 </section>
 <!-- contact section ends -->    
+
+
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzUJedsm7ickzMeX5oZMKYwmxxZZkOETo&callback=initMap&libraries=&v=weekly" async></script>
+
+    <script>
+      function initMap() {
+        const coord = { lat: 18.5204, lng: 73.8567 };
+        
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 14,
+          center: coord,
+          mapId: "efffb52a8e985f64",
+        });
+        
+        const marker = new google.maps.Marker({
+          position: coord,
+          map: map,
+        });
+      } 
+</script>
 
 
 <script src="./assests/script.js"></script>
