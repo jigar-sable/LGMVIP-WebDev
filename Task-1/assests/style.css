@@ -525,15 +525,16 @@ header .navbar li a:hover {
 .contact {
     /* background: #333; */
     padding: 0;
+    margin-bottom: 8rem;
 }
 .contact .row{
-    /* background: green; */
+    background: green;
     width: 100%;
     min-height: 80vh;
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-    flex: 1 1 50rem;
+    flex-direction: row;
 }
 .contact .row .col{
     width: 50%;
@@ -549,6 +550,7 @@ header .navbar li a:hover {
 }
 .contact form h2{
     font-size: 2.5rem;
+    margin-left: 1rem;
 }
 form .form-group{
   display: flex;
@@ -568,7 +570,7 @@ form i{
   top: 50%;
   left: 18px;
   color: rgb(51, 51, 51);
-  font-size: 17px;
+  font-size: 2rem;
   pointer-events: none;
   transform: translateY(-50%);
 }
@@ -578,15 +580,15 @@ form .message textarea{
   height: 100%;
   outline: none;
   padding: 0 16px 0 48px;
-  font-size: 16px;
+  font-size: 1.8rem;
   font-family: 'Poppins', sans-serif;
   border-radius: 5px;
-  border: 1px solid rgb(51, 51, 51);
+  /* border: 1px solid rgb(51, 51, 51); */
   background: #e5ecfb;
 }
 .field input::placeholder,
 .message textarea::placeholder{
-  color: rgb(51, 51, 51);
+  color: rgb(51, 51, 51,.7);
 }
 .field input:focus,
 .message textarea:focus{
@@ -603,21 +605,17 @@ form .message{
   width: 100%;
 }
 form .message i{
-  top: 25px;
+  top: 22px;
   font-size: 20px;
   left: 15px;
 }
 form .message textarea{
   min-height: 130px;
-  max-height: 230px;
-  max-width: 100%;
   min-width: 100%;
   padding: 12px 20px 0 48px;
+  resize: none;
 }
-form .message textarea::-webkit-scrollbar{
-  width: 0px;
-}
-button{
+form button{
   color: #fff;
   border: none;
   outline: none;
@@ -632,27 +630,202 @@ button{
   transition: 0.3s ease;
   font-family: 'Nunito',sans-serif;
 }
-button:hover{
+form button:hover{
   background: #421cecf5;
 }
-span{
+form span{
   font-size: 17px;
   padding: 1rem;
   display: none;
 }
-button i{
+form button i{
   position: relative;
   top: 6px; left: 2px;
   font-size: 1.5rem;
   transition: 0.3s;
   color: #fff;
 }
-button:hover i{
+form button:hover i{
   left: 8px;
 }
+/* contact media queries starts */
+@media(max-width:768px) {
+    .contact .row .col{
+        width: 100%;
+    }
+    #map {
+        height: 40rem;
+    }
+    .contact form{
+        width: 100%;
+        padding: 3rem;
+    }
+}
+/* contact media queries ends */
 /* contact section ends */
 
 
+
+
+/* footer section starts */
+.footer{
+    position: relative;
+    min-height: 60vh;
+    padding-top: 1rem;
+    background: rgb(23, 0, 44);
+}
+/* newsletter starts */
+.footer .newsletter {
+    width: 60%;
+    background: var(--purple);
+    height: 18rem;
+    position: absolute;
+    top: -10rem; right: 25rem;
+    border-radius: 1rem;
+}
+.footer .newsletter .wrapper {
+    position: relative;
+    padding: 2.5rem 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: .2rem;
+}
+.footer .newsletter .wrapper h2{
+    font-size: 3rem;
+    color: #fff;
+}
+.footer .newsletter .wrapper p{
+    font-size: 1.8rem;
+    color: rgba(235, 235, 235, 0.952);
+}
+.footer .newsletter .wrapper .input-container{
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    /* background: green; */
+    gap: 1rem;
+}
+.footer .newsletter .wrapper .input-container input{
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    width: 60%;
+    padding: 1rem;
+}
+.footer .newsletter .wrapper .input-container input::placeholder{ 
+    padding: 1rem;
+}
+.footer .newsletter .wrapper .input-container .btn{
+    padding: 1rem 2rem;
+    background: var(--yellow);
+    color: var(--purple);
+    border-radius: 3rem;
+    font-size: 1.7em;
+    font-weight: 700;
+}
+/* newsletter media queries starts */
+@media(max-width:768px) {
+    .footer .newsletter {
+        width: 90%;
+        height: 23rem;
+        position: relative;
+        left: 2rem;
+    }
+    .footer .newsletter .wrapper {
+        padding: 2rem 3rem;
+    }
+    .footer .newsletter .wrapper .input-container{
+        width: 100%;
+        gap: .5rem;
+    }
+}
+/* newsletter media queries ends */
+/* newsletter ends */
+
+.footer .box-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 8rem;
+    /* background: green; */
+}
+.footer .box-container .box{
+    flex: 1 1 10rem;
+    margin: 1rem 2rem;
+    /* background: #333; */
+}
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color: #fff;
+    padding-bottom: 1.5rem;
+    font-weight: normal;
+}
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    color: #ccc;
+    padding: 1rem 0;
+}
+.footer .box-container .box p i{
+    padding-right: 1rem;
+    color: var(--yellow);
+}
+.footer .box-container .box a{
+    font-size: 1.5rem;
+    color: #ccc;
+    padding: .7rem 0;
+    display: flex;
+}
+.footer .box-container .box a:hover{
+    color: var(--yellow);
+}
+.footer .box-container .box .share{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+.footer .box-container .box .share a{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 5rem;
+    border: .1rem solid #fff3;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .box-container .box .share a:hover{
+    background: #fff;
+    color: #ff0157;
+}
+
+.footer .credit{
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #fff;
+    border-top: .1rem solid #fff3;
+}
+.footer .credit a{
+    color: var(--yellow);
+}
+/* footer media queries starts */
+@media(max-width:768px) {
+    .footer .box-container{
+        margin-top: -8rem;
+    }
+    .footer .box-container .box{
+        flex: 1 1 20rem;
+        margin: 1rem 3rem;
+    }
+}
+/* footer media queries ends */
+/* footer section ends */
 
 
 @media(max-width:450px){
