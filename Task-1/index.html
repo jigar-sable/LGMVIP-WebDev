@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zippy Dummy | LGMVIP</title>
     <link rel="stylesheet" href="./assests/style.css">
+
+    <!-- swiperjs cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -168,6 +173,9 @@
 
         <div class="card">
             <img src="./assests/mainbg.jpg" alt="">
+            <div class="social">
+                
+            </div>
             <h3>Sara Jones</h3>
             <span>CEO, Manager</span>
         </div>
@@ -205,6 +213,38 @@
     </div>
 </section>
 <!-- team section ends -->
+
+<!-- life in zippy starts -->
+<section class="life" id="life">
+  <h2 class="heading">Life in Zippy</h2>
+
+  <div class="container">
+    
+    <img id="curimg" class="center" src="https://mk0jshayeventson1x3r.kinstacdn.com/wp-content/uploads/2020/04/Icebreaker-Activity-Ideas-500x333.jpg">
+
+    <div class="wrapper">
+      <div id="img-gallery">
+        <span id="prev" class="prev-next fas fa-chevron-left"></span>
+        <div id="lifeimg-gallery">
+
+          <img src="./assests/mainbg.jpg" alt="" class="lifeimg">
+          <img src="./assests/mainbg.jpg" alt="" class="lifeimg">
+          <img src="./assests/mainbg.jpg" alt="" class="lifeimg">
+          <img src="./assests/mainbg.jpg" alt="" class="lifeimg">
+          <img src="./assests/mainbg.jpg" alt="" class="lifeimg">
+          <img src="./assests/mainbg.jpg" alt="" class="lifeimg">
+          <img src="./assests/mainbg.jpg" alt="" class="lifeimg">
+          <img src="./assests/mainbg.jpg" alt="" class="lifeimg">
+
+        </div>
+        <span id="next" class="prev-next fas fa-chevron-right"></span>
+      </div>
+    </div>
+  </div>
+  <!-- Life in Zippy -->
+</section>
+
+<!-- life in zippy ends -->
 
 
 <!-- blog section starts -->
@@ -298,6 +338,33 @@
 </section>
 <!-- contact section ends -->
 
+<section class="brands" id="brands">
+    <h2 class="heading">Brands</h2>
+
+    <div class="swiper-container">
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./assests/images/1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./assests/images/2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./assests/images/3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./assests/images/4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./assests/images/5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./assests/images/6.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./assests/images/1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./assests/images/1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./assests/images/1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./assests/images/1.jpg" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+
+
+
 
 <!-- footer section starts -->
 <main class="footer">
@@ -386,7 +453,8 @@
       } 
 </script>
 
-
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="./assests/script.js"></script>
     
 </body>

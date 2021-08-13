@@ -87,12 +87,28 @@ header .navbar li {
     margin-left: 2.5rem;
 }
 header .navbar li a {
+    position: relative;
     font-size: 1.5em;
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
     font-weight: 500;
 }
+header .navbar li a::before{
+    content: ' ';
+    position: absolute;
+    background: var(--yellow);
+    width: 0;
+    height: 2px;
+    top: 22px;
+    bottom: 0; left: 0;
+    border-radius: 4px;
+    transition: .3s ease;
+}
+header .navbar li a:hover::before{
+    width: 100%;
+}
+
 header.sticky .navbar li a {
     color: #111;
 }
@@ -448,6 +464,89 @@ header .navbar li a:hover {
 /* team media queries ends */
 /* team section ends */
 
+
+/* life in zippy starts */
+.life {
+    min-height: 50vh;
+    padding: 2rem 9% 0 9%;
+    background: rgb(255, 255, 230,.7);
+}
+.life .container {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.life .container img {
+    position: relative;
+    object-fit: cover;
+    width: 60%;
+    height: 40rem;
+    border-radius: .5rem;
+    transition: .2s;
+}
+.life .container #img-gallery{
+    margin: auto;
+    height: auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.life .container .prev-next{
+    padding: 2.7rem 1.2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    border-radius: .2rem;
+    background-color: var(--purple);
+    transition: .2s ease;
+}
+.life .container.prev-next:hover{
+   background-color: var(--yellow);
+}
+.life .container #lifeimg-gallery{
+    display: flex;
+    width: 90%;
+    overflow: auto;
+    margin: 0 1rem;
+    transition: all .2s;
+}
+.life .container .lifeimg{
+    object-fit: cover;
+    max-width: 10rem;
+    max-height: 7rem;
+    cursor: pointer;
+    opacity: 0.7;
+    margin: .5rem;
+}
+.life .container .lifeimg:hover{
+	opacity:1;
+    border: 2px solid #222;
+}
+.life .container .lifeimg.active{
+    opacity: 1;
+}
+.life .container #lifeimg-gallery::-webkit-scrollbar {
+	display: none;
+}
+@media screen and (max-width: 700px) {
+    .life .container img {
+        width: 100%;
+        height: 35rem;
+    }
+    .life .container #img-gallery{
+        width: 110%;
+        margin-left: -2rem;
+    }
+}
+/* life in zippy ends */
+
+
+
 /* blog section starts */
 .blog .box-container{
     display: grid;
@@ -513,19 +612,9 @@ header .navbar li a:hover {
 /* blog section ends */
 
 
-
-
-
-
-
-
-
-
 /* contact section ends */
 .contact {
-    /* background: #333; */
     padding: 0;
-    margin-bottom: 8rem;
 }
 .contact .row{
     background: green;
@@ -546,7 +635,6 @@ header .navbar li a:hover {
 .contact form{
   width: 90%;
   padding: 5rem;
-  /* background: yellow; */
 }
 .contact form h2{
     font-size: 2.5rem;
@@ -665,6 +753,37 @@ form button:hover i{
 /* contact section ends */
 
 
+/* brand starts */
+/* .brands {
+    min-height: 50vh;
+    margin-bottom: 10rem;
+    padding: 0;
+    background: #fff;
+}
+.swiper-container {
+  width: 90%;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-container .swiper-wrapper{
+    height: 20rem;
+    width: 10rem;
+}
+.swiper-container .swiper-wrapper img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+} */
+
+.brands{
+    text-align: center;
+    min-height: 50vh;
+    padding: 1rem 9% 9rem 9%;
+    background: #fff;
+}
+/* brand ends */
 
 
 /* footer section starts */
@@ -707,7 +826,6 @@ form button:hover i{
     flex-direction: row;
     align-items: center;
     margin-top: 1rem;
-    /* background: green; */
     gap: 1rem;
 }
 .footer .newsletter .wrapper .input-container input{
@@ -752,12 +870,10 @@ form button:hover i{
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 8rem;
-    /* background: green; */
 }
 .footer .box-container .box{
     flex: 1 1 10rem;
     margin: 1rem 2rem;
-    /* background: #333; */
 }
 .footer .box-container .box h3{
     font-size: 2.5rem;
