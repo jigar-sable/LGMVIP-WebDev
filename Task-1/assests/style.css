@@ -543,9 +543,12 @@ header .navbar li a:hover {
     height: 100%;
 }
 .contact form{
-  width: 70%;
+  width: 90%;
   padding: 5rem;
   /* background: yellow; */
+}
+.contact form h2{
+    font-size: 2.5rem;
 }
 form .form-group{
   display: flex;
