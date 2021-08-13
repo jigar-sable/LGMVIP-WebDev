@@ -286,6 +286,118 @@ header .navbar li a:hover {
 
 
 
+
+/* team section starts */
+.team .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 80%;
+    margin: auto;
+}
+.team .container .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: .3rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.team .container .card img{
+    border-radius: 50%;
+    height: 16rem;
+    width: 16rem;
+    object-fit: cover;
+}
+.team .container .card h3{
+    font-size: 2rem;
+}
+.team .container .card span{
+    font-size: 1.5rem;
+    color: rgb(68, 68, 68);
+    font-weight: 600;
+}
+/* team media queries starts */
+@media(max-width:768px) {
+    .team .container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        width: 100%;
+    }
+}
+/* team media queries ends */
+/* team section ends */
+
+/* blog section starts */
+.blog .box-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    width: 80%;
+    margin: auto;
+}
+.blog .box-container .box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 20rem;
+    background: rgb(255, 255, 255);
+    margin-top: 3rem;
+    border-radius: .5rem;
+}
+.blog .box-container .box img{
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem .5rem 0 0;
+}
+.blog .box-container .box .desc {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem .7rem 2.5rem .7rem;
+}
+.blog .box-container .box h3{
+    font-size: 2.3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.blog .box-container .box span{
+    font-size: 1.5rem;
+    color: rgb(97, 97, 97);
+}
+.blog .box-container .box p{
+    font-size: 1.5rem;
+}
+.blog .box-container .box .btn{
+    position: relative;
+    padding: 1rem 2.5rem;
+    background: var(--yellow);
+    color: var(--purple);
+    border-radius: .3em;
+    font-size: 1.7em;
+    font-weight: 600;
+}
+/* blog media queries starts */
+@media(max-width:768px) {
+    .blog .box-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+        width: 100%;
+    }
+}
+/* blog media queries ends */
+/* blog section ends */
+
+
+
 @media(max-width:450px){
     html{
         font-size: 50%;
