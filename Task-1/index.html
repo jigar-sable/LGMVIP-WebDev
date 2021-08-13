@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./assests/style.css">
 
     <!-- swiperjs cdn -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -163,6 +162,48 @@
 
 </section>
 <!-- pricing section ends -->
+
+<!-- video projects section starts -->
+
+<section class="videopro" id="videopro">
+
+    <h2 class="heading">Video Projects</h2>
+
+    <div class="swiper-container video-slider">
+
+        <div class="swiper-wrapper video-wrapper">
+          <div class="swiper-slide">
+              <div class="video">
+              <video src="./assests/videos/2.mp4" autoplay controls loop muted></video>
+              </div>
+          </div>
+          <div class="swiper-slide">
+              <div class="video">
+              <video src="./assests/videos/3.mp4" autoplay controls loop muted></video>
+              </div>
+          </div>
+          <div class="swiper-slide">
+              <div class="video">
+              <video src="./assests/videos/1.mp4" autoplay controls loop muted></video>
+              </div>
+          </div>
+          <div class="swiper-slide">
+              <div class="video">
+              <video src="./assests/videos/4.mp4" autoplay controls loop muted></video>
+              </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+</section>
+
+
+<!-- video projects section ends -->
 
 
 <!-- team section starts -->
@@ -341,7 +382,7 @@
 <section class="brands" id="brands">
     <h2 class="heading">Brands</h2>
 
-    <div class="swiper-container">
+    <div class="swiper-container brand-slider">
 
         <div class="swiper-wrapper">
             <div class="swiper-slide"><img src="./assests/images/1.jpg" alt=""></div>
@@ -434,6 +475,12 @@
 
 
 
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script src="./assests/script.js"></script>
+
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzUJedsm7ickzMeX5oZMKYwmxxZZkOETo&callback=initMap&libraries=&v=weekly" async></script>
 
     <script>
@@ -451,11 +498,6 @@
           map: map,
         });
       } 
-</script>
-
-<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="./assests/script.js"></script>
-    
+</script>    
 </body>
 </html>

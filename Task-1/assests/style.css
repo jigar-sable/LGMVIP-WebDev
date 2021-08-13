@@ -418,6 +418,55 @@ header .navbar li a:hover {
 
 
 
+/* video projects section ends */
+
+.videopro{
+    min-height: 70vh;
+    padding: 1rem 5%;
+}
+.videopro .video-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 1rem;
+}
+.videopro .video {
+    width: 100%;
+    height: 32rem;
+}
+.videopro .video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+div.swiper-button-prev,
+div.swiper-button-next {
+color: var(--yellow);
+}
+span.swiper-pagination-bullet {
+background-color: var(--purple);
+}
+@media(max-width:768px) {
+    .videopro{
+        min-height: 70vh;
+        padding: 1rem 4%;
+    }
+    .videopro .video {
+        width: 95%;
+        height: 32rem;
+    }
+    .videopro .video-wrapper{
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+        margin: 1rem;
+    }
+}
+/* video projects section ends */
+
+
+
 
 /* team section starts */
 .team .container{
