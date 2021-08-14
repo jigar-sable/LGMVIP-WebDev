@@ -58,10 +58,7 @@ imgBtn.forEach(btn =>{
     });
 });
 
-
-
-
-// carousel life in zippy
+// carousel life in composey
 var lifeimg = document.querySelectorAll('.lifeimg')
 var len=lifeimg.length;
 
@@ -82,7 +79,23 @@ slideRight.addEventListener('click', function(){
   document.getElementById('lifeimg-gallery').scrollLeft += 150
 })
 
+// map 
+function initMap() {
+    const coord = { lat: 28.7041, lng: 77.1025 };
+    
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 14,
+      center: coord,
+      mapId: "efffb52a8e985f64",
+    });
+    const marker = new google.maps.Marker({
+      position: coord,
+      map: map,
+    });
+} 
 
+
+// video slider
 var swiper = new Swiper('.video-slider', {
     loop: true,
     autoplay: {
@@ -110,12 +123,12 @@ var swiper = new Swiper('.video-slider', {
     }
 });
 
-
+// clients/brands slider
 var swiper = new Swiper('.brand-slider', {
   spaceBetween: 20,
   loop: true,
   autoplay: {
-      delay: 2000,
+      delay: 1500,
       disableOnInteraction: false,
   },
   navigation: {
@@ -128,9 +141,6 @@ var swiper = new Swiper('.brand-slider', {
       },
       768: {
           slidesPerView: 3,
-      },
-      991: {
-          slidesPerView: 4,
       },
       1200: {
           slidesPerView: 5,
