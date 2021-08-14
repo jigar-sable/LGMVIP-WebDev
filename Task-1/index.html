@@ -10,17 +10,19 @@
     <!-- swiperjs cdn -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
 <!-- header starts -->
 <header>
-    <a href="#" class="logo">Composey<span> <i class="fas fa-drafting-compass"></i></span></a>
-    <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="#" class="logo"><i class="fas fa-drafting-compass"></i> Composey</a>
+    <div id="menu-bar" class="ri-menu-3-line"></div>
 
     <ul class="navbar">
-        <li><a href="#home">Home</a></li>
+        <li><a class="active" href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#pricing">Pricing</a></li>
@@ -35,19 +37,21 @@
 <section class="home" id="home">
     <div class="content">
         <h2>One page promising to fill all your needs!</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quidem velit suscipit adipisci voluptatem in assumenda inventore architecto aperiam dignissimos!</p>
         <div class="btn-container">
             <a href="#" class="btn">Learn More</a>
-            <a href="#" class="btn">Learn More</a>
+            <a href="#about" class="btn btn2">about us</a>
         </div>
     </div> 
 
     <div class="controls">
-        <span class="img-btn active" data-src="./assests/mainbg.jpg"></span>
-        <span class="img-btn" data-src="./assests/images/bg1.jpg"></span>
-        <span class="img-btn" data-src="./assests/images/bg2.jpg"></span>
-        <span class="img-btn" data-src="./assests/images/bg3.jpg"></span>
-        <span class="img-btn" data-src=""></span>
+        <span class="img-btn active" data-src="./assests/images/bg/bg1.jpg"></span>
+        <span class="img-btn" data-src="./assests/images/bg/bg2.jpg"></span>
+        <span class="img-btn" data-src="./assests/images/bg/bg3.jpg"></span>
+        <span class="img-btn" data-src="./assests/images/bg/bg4.jpg"></span>
+        <span class="img-btn" data-src="./assests/images/bg/bg5.jpg"></span>
+        <span class="img-btn" data-src="./assests/images/bg/bg6.jpg"></span>
+        <span class="img-btn" data-src="./assests/images/bg/bg7.jpg"></span>
     </div>
 
 </section>
@@ -55,7 +59,7 @@
 
 <!-- about section starts -->
 <section class="about" id="about">
-    <h2 class="heading">Welcome to Composey</h2>
+    <h2 class="heading">Welcome to <span>Composey</span></h2>
 
     <div class="container">
 
@@ -99,16 +103,16 @@
 
 <!-- projects section starts -->
 <section class="projects" id="projects">
-    <h2 class="heading">projects</h2>
+    <h2 class="heading">our <span>projects</span></h2>
 
     <div class="box-container">
 
         <div class="box">
             <div class="image">
-                <img src="./assests/mainbg.jpg" alt="">
+                <img src="./assests/images/project/1.png" alt="">
             </div>
             <div class="desc">
-            <h3>Lorem Ipsum</h3>
+            <h3>project name</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate iure, vitae autem voluptatem nobis modi omnis soluta. Aperiam, dolore eius?</p>
             <a href="#" class="btn">launch case study</a>
             </div>
@@ -116,10 +120,10 @@
 
         <div class="box">
             <div class="image">
-                <img src="./assests/mainbg.jpg" alt="">
+                <img src="./assests/images/project/2.png" alt="">
             </div>
             <div class="desc">
-            <h3>Lorem Ipsum Sit</h3>
+            <h3>project name </h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate iure, vitae autem voluptatem nobis modi omnis soluta. Aperiam, dolore eius?</p>
             <a href="#" class="btn">launch case study</a>
             </div>
@@ -127,10 +131,10 @@
 
         <div class="box">
             <div class="image">
-                <img src="./assests/mainbg.jpg" alt="">
+                <img src="./assests/images/project/3.png" alt="">
             </div>
             <div class="desc">
-            <h3>Lorem Ipsum</h3>
+            <h3>project name</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate iure, vitae autem voluptatem nobis modi omnis soluta. Aperiam, dolore eius?</p>
             <a href="#" class="btn">launch case study</a>
             </div>
@@ -138,10 +142,10 @@
 
         <div class="box">
             <div class="image">
-                <img src="./assests/mainbg.jpg" alt="">
+                <img src="./assests/images/project/4.png" alt="">
             </div>
             <div class="desc">
-            <h3>Lorem Ipsum</h3>
+            <h3>project name</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate iure, vitae autem voluptatem nobis modi omnis soluta. Aperiam, dolore eius?</p>
             <a href="#" class="btn">launch case study</a>
             </div>
@@ -155,7 +159,7 @@
 
 <!-- pricing section starts -->
 <section class="pricing" id="pricing">
-    <h2 class="heading">Composey Pricing</h2>
+    <h2 class="heading">Composey <span>pricing</span></h2>
 
     <div class="box-container">
 
@@ -225,7 +229,7 @@
 
 <section class="videopro" id="videopro">
 
-    <h2 class="heading">Video Projects</h2>
+    <h2 class="heading">project <span>demos</span></h2>
 
     <div class="swiper-container video-slider">
 
@@ -250,6 +254,16 @@
               <video src="./assests/videos/4.mp4" autoplay controls loop muted></video>
               </div>
           </div>
+          <div class="swiper-slide">
+            <div class="video">
+            <video src="./assests/videos/5.mp4" autoplay controls loop muted></video>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="video">
+            <video src="./assests/videos/6.mp4" autoplay controls loop muted></video>
+            </div>
+          </div>
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
@@ -266,45 +280,91 @@
 
 <!-- team section starts -->
 <section class="team" id="team">
-    <h2 class="heading">Composey Team</h2>
+    <h2 class="heading">Composey <span>team</span></h2>
 
     <div class="container">
 
         <div class="card">
-            <img src="./assests/mainbg.jpg" alt="">
+            <div class="image">
+            <img src="./assests/images/team/1.jpg" alt="">
+
             <div class="social">
-                
+                <a class="ri-facebook-fill"></a>
+                <a class="ri-twitter-line"></a>
+                <a class="ri-instagram-line"></a>
+            </div>
+            </div>
+            
+            <h3>Sara Jones</h3>
+            <span>CEO, Manager</span>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="./assests/images/team/1.jpg" alt="">
+    
+                <div class="social">
+                    <a class="ri-facebook-fill"></a>
+                    <a class="ri-twitter-line"></a>
+                    <a class="ri-instagram-line"></a>
+                </div>
             </div>
             <h3>Sara Jones</h3>
             <span>CEO, Manager</span>
         </div>
 
         <div class="card">
-            <img src="./assests/mainbg.jpg" alt="">
+            <div class="image">
+                <img src="./assests/images/team/1.jpg" alt="">
+    
+                <div class="social">
+                    <a class="ri-facebook-fill"></a>
+                    <a class="ri-twitter-line"></a>
+                    <a class="ri-instagram-line"></a>
+                </div>
+            </div>
             <h3>Sara Jones</h3>
             <span>CEO, Manager</span>
         </div>
 
         <div class="card">
-            <img src="./assests/mainbg.jpg" alt="">
+            <div class="image">
+                <img src="./assests/images/team/1.jpg" alt="">
+    
+                <div class="social">
+                    <a class="ri-facebook-fill"></a>
+                    <a class="ri-twitter-line"></a>
+                    <a class="ri-instagram-line"></a>
+                </div>
+            </div>
             <h3>Sara Jones</h3>
             <span>CEO, Manager</span>
         </div>
 
         <div class="card">
-            <img src="./assests/mainbg.jpg" alt="">
+            <div class="image">
+                <img src="./assests/images/team/1.jpg" alt="">
+    
+                <div class="social">
+                    <a class="ri-facebook-fill"></a>
+                    <a class="ri-twitter-line"></a>
+                    <a class="ri-instagram-line"></a>
+                </div>
+            </div>
             <h3>Sara Jones</h3>
             <span>CEO, Manager</span>
         </div>
 
         <div class="card">
-            <img src="./assests/mainbg.jpg" alt="">
-            <h3>Sara Jones</h3>
-            <span>CEO, Manager</span>
-        </div>
-
-        <div class="card">
-            <img src="./assests/mainbg.jpg" alt="">
+            <div class="image">
+                <img src="./assests/images/team/1.jpg" alt="">
+    
+                <div class="social">
+                    <a class="ri-facebook-fill"></a>
+                    <a class="ri-twitter-line"></a>
+                    <a class="ri-instagram-line"></a>
+                </div>
+            </div>
             <h3>Sara Jones</h3>
             <span>CEO, Manager</span>
         </div>        
@@ -315,25 +375,28 @@
 
 <!-- life in zippy starts -->
 <section class="life" id="life">
-  <h2 class="heading">Life in Composey</h2>
+  <h2 class="heading">Life in <span>composey</span></h2>
 
   <div class="container">
     
-    <img id="curimg" class="center" src="https://mk0jshayeventson1x3r.kinstacdn.com/wp-content/uploads/2020/04/Icebreaker-Activity-Ideas-500x333.jpg">
+    <img id="curimg" class="center" src="./assests/images/life/1.jpg">
 
     <div class="wrapper">
       <div id="img-gallery">
         <span id="prev" class="prev-next fas fa-chevron-left"></span>
         <div id="lifeimg-gallery">
 
-          <img src="./assests/mainbg.jpg" alt="" class="lifeimg">
-          <img src="./assests/mainbg.jpg" alt="" class="lifeimg">
-          <img src="./assests/mainbg.jpg" alt="" class="lifeimg">
-          <img src="./assests/mainbg.jpg" alt="" class="lifeimg">
-          <img src="./assests/mainbg.jpg" alt="" class="lifeimg">
-          <img src="./assests/mainbg.jpg" alt="" class="lifeimg">
-          <img src="./assests/mainbg.jpg" alt="" class="lifeimg">
-          <img src="./assests/mainbg.jpg" alt="" class="lifeimg">
+          <img src="./assests/images/life/1.jpg" alt="" class="lifeimg">
+          <img src="./assests/images/life/2.jpg" alt="" class="lifeimg">
+          <img src="./assests/images/life/3.jpg" alt="" class="lifeimg">
+          <img src="./assests/images/life/4.jpg" alt="" class="lifeimg">
+          <img src="./assests/images/life/5.jpg" alt="" class="lifeimg">
+          <img src="./assests/images/life/6.jpg" alt="" class="lifeimg">
+          <img src="./assests/images/life/7.jpg" alt="" class="lifeimg">
+          <img src="./assests/images/life/8.jpg" alt="" class="lifeimg">
+          <img src="./assests/images/life/9.jpg" alt="" class="lifeimg">
+          <img src="./assests/images/life/10.jpg" alt="" class="lifeimg">
+          <img src="./assests/images/life/11.jpg" alt="" class="lifeimg">
 
         </div>
         <span id="next" class="prev-next fas fa-chevron-right"></span>
@@ -348,13 +411,13 @@
 
 <!-- blog section starts -->
 <section class="blog" id="blog">
-    <h2 class="heading">Composey blogs</h2>
+    <h2 class="heading">Composey <span>blogs</span></h2>
 
         <div class="box-container">
 
             <div class="box">
                 <div class="image">
-                    <img src="./assests/mainbg.jpg" alt="">
+                    <img src="./assests/images/blog/1.jpg" alt="">
                 </div>
                 <div class="desc">
                 <h3>Lorem Ipsum Sit amet</h3>
@@ -366,7 +429,7 @@
 
             <div class="box">
                 <div class="image">
-                    <img src="./assests/mainbg.jpg" alt="">
+                    <img src="./assests/images/blog/2.jpg" alt="">
                 </div>
                 <div class="desc">
                 <h3>Lorem Ipsum Sit amet</h3>
@@ -378,7 +441,7 @@
 
             <div class="box">
                 <div class="image">
-                    <img src="./assests/mainbg.jpg" alt="">
+                    <img src="./assests/images/blog/3.jpg" alt="">
                 </div>
                 <div class="desc">
                 <h3>Lorem Ipsum Sit amet</h3>
@@ -419,11 +482,11 @@
                       </div>
                       <div class="field">
                         <input type="text" name="subject" placeholder="Subject">
-                        <i class='fas fa-phone-alt'></i>
+                        <i class='ri-chat-smile-2-fill'></i>
                       </div>
                       <div class="message">
                       <textarea placeholder="Message" name="message" required></textarea>
-                      <i class="fas fa-comment-dots"></i>
+                      <i class="ri-chat-1-fill"></i>
                       </div>
                       </div>
 
@@ -437,21 +500,22 @@
 <!-- contact section ends -->
 
 <section class="brands" id="brands">
-    <h2 class="heading">Brands</h2>
+    <h2 class="heading">our <span>clients</span></h2>
 
     <div class="swiper-container brand-slider">
 
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="./assests/images/1.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="./assests/images/2.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="./assests/images/3.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="./assests/images/4.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="./assests/images/5.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="./assests/images/6.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="./assests/images/1.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="./assests/images/1.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="./assests/images/1.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="./assests/images/1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./assests/images/brands/1.png" alt=""></div>
+            <div class="swiper-slide"><img src="./assests/images/brands/2.png" alt=""></div>
+            <div class="swiper-slide"><img src="./assests/images/brands/3.png" alt=""></div>
+            <div class="swiper-slide"><img src="./assests/images/brands/4.png" alt=""></div>
+            <div class="swiper-slide"><img src="./assests/images/brands/5.png" alt=""></div>
+            <div class="swiper-slide"><img src="./assests/images/brands/6.png" alt=""></div>
+            <div class="swiper-slide"><img src="./assests/images/brands/7.png" alt=""></div>
+            <div class="swiper-slide"><img src="./assests/images/brands/8.png" alt=""></div>
+            <div class="swiper-slide"><img src="./assests/images/brands/9.png" alt=""></div>
+            <div class="swiper-slide"><img src="./assests/images/brands/10.png" alt=""></div>
+            <div class="swiper-slide"><img src="./assests/images/brands/11.png" alt=""></div>
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
@@ -527,9 +591,14 @@
 <!-- footer section ends -->
 
 
+<!-- scroll top btn -->
+<a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+<!-- scroll back to top -->
 
 
 
+<!-- jquery cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
@@ -539,19 +608,24 @@
 
     <script>
       function initMap() {
-        const coord = { lat: 18.5204, lng: 73.8567 };
+        const coord = { lat: 28.7041, lng: 77.1025 };
         
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 14,
           center: coord,
           mapId: "efffb52a8e985f64",
         });
-        
         const marker = new google.maps.Marker({
           position: coord,
           map: map,
         });
       } 
 </script>    
+
+
+
+
+
+
 </body>
 </html>
