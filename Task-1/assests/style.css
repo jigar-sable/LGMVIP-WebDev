@@ -32,7 +32,7 @@ html::-webkit-scrollbar{
   width: .8rem;
 }
 html::-webkit-scrollbar-track{
-  background: #ffabc7;
+  background: #f3e777;
 }
 html::-webkit-scrollbar-thumb{
   background: var(--purple);
