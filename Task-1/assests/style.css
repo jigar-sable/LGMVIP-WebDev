@@ -16,7 +16,7 @@
     text-decoration: none;
     outline: none; border: none;
     text-transform: capitalize;
-    transition: all .2s linear;
+    transition: all .1s linear;
 }
 *::selection {
     background: var(--purple);
@@ -108,9 +108,6 @@ header .navbar li a::before {
     border-radius: 4px;
     transition: .3s ease;
 }
-header .navbar li a:hover::before {
-    width: 100%;
-}
 
 header.sticky .navbar li a {
     color: #111;
@@ -118,7 +115,8 @@ header.sticky .navbar li a {
 }
 header .navbar li a.active,
 header .navbar li a.active::before,
-header .navbar li a:hover {
+header .navbar li a:hover, 
+header .navbar li a:hover::before {
     color: var(--pink);
     width: 100%;
 }
@@ -140,6 +138,9 @@ header .navbar li a:hover {
     }
     .sticky #menu-bar {
         color: #000;
+    }
+    header.sticky .navbar li a {
+        color: #fff;
     }
     #menu-bar {
         display: initial;
@@ -163,18 +164,25 @@ header .navbar li a:hover {
     }
     header .navbar li a {
         font-size: 2rem;
-        margin: 1.5rem 1rem 0 .5rem;
+        margin: 1.8rem 1rem 0 .5rem;
         padding: .8rem;
         display: flex;
         align-items: center;
         border-radius: .5rem;
         border-bottom: .4rem solid var(--yellow);
-        background: #fff;
+        /* background: #fff; */
         font-weight: 600;
-        color: #111;
+        color: #fff;
     }
     header .navbar li a::before {
         display: none;
+    }
+    header .navbar li a.active,
+    header .navbar li a.active::before,
+    header .navbar li a:hover, 
+    header .navbar li a:hover::before {
+        color: var(--pink);
+        width: auto;
     }
 }
 /* header media queries ends */
@@ -860,26 +868,27 @@ background-color: var(--purple);
 .blog .box-container .box .desc {
     display: flex;
     flex-direction: column;
-    gap: 1.3rem;
+    gap: 1rem;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 1rem 1rem 2.5rem 1rem;
+    padding: .5rem 1.2rem 2rem 1.2rem;
 }
 .blog .box-container .box h3 {
-    font-size: 2.3rem;
+    font-size: 2.4rem;
     font-weight: 800;
     text-transform: uppercase;
 }
 .blog .box-container .box span {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: #666;
     font-weight: 600;
 }
 .blog .box-container .box p {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 600;
+    text-align: left;
 }
 .blog .box-container .box .btn {
     position: relative;
