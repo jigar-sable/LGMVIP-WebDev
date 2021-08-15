@@ -1,7 +1,7 @@
 import React from 'react'
 import '../Navbar/Navbar.css'
 
-function Navbar({fetchUsers}) {
+export default function Navbar({fetchUsers}) {
     
     return (
         <header>
@@ -10,6 +10,3 @@ function Navbar({fetchUsers}) {
         </header>
     )
 }
-
-export default Navbar
-
